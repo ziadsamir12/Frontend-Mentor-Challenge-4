@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Merriweather:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Cyan: hsl(179, 62%, 43%)
+--Bright-Yellow: hsl(71, 73%, 54%)
+--Light-Gray: hsl(204, 43%, 93%)
+--Grayish-Blue: hsl(218, 22%, 67%)
+}
+body {
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    padding: 1.25rem;
+}
+.container{
+    background-color: #fff;
+    border-radius: 0.625rem;
+
+}
+ul{
+    list-style: none;
+}
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    padding: .625rem 1.25rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: initial;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+p.green{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.container > article:first-child{
+    padding: 2rem;
+}
+.container > article:first-child h1{
+    color:hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}
+.container > article:first-child p{
+    margin-bottom: 1rem;
+}
+p,li{
+    line-height: 1.6;
+}
+.container > article:first-child p:last-child{
+    color:  hsl(218, 22%, 67%);
+}
+.container section{
+    display: flex;
+    flex-direction: column;
+}
+.container section article{
+    padding: 2rem ;
+
+    color: #fff;
+}
+.container section article:first-child{
+    background-color: hsl(179, 62%, 43%);
+}
+.container section article:first-child h2{
+    margin-bottom: 1rem;
+
+}
+
+.container section article:first-child h3 span{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.container section article:first-child h3{
+    font-size: 1rem;
+    font-weight: 400;
+    display:flex ;
+    align-items: center;
+}
+
+.container section article:first-child p{
+    margin: 1rem 0;
+
+}
+.container section article:last-child{
+    background-color: hsl(179, 62%, 49%);
+    border-bottom-left-radius:0.625rem ;
+    border-bottom-right-radius:0.625rem ;
+}
+.container section article:last-child h2{
+    margin-bottom: 1rem;
+}
+@media(min-width: 768px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .container > article:first-child h1{
+        font-size: 2rem;
+    }
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+    .container section{
+        flex-direction: row;
+    }
+    .container section article:first-child{
+        flex: 1;
+        border-bottom-left-radius:0.625rem ;
+    }
+    .container section article:last-child{
+        flex: 1;
+        border-bottom-right-radius:0.625rem ;
+        border-bottom-left-radius:0rem ;
+    }
+}
